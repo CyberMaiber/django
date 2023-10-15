@@ -1,37 +1,15 @@
-INFO 2023-10-13 17:05:11,719 autoreload 29490 133891711588160 Watching for file changes with StatReloader
-INFO 2023-10-13 17:05:15,979 basehttp 29490 133891671693056 "GET /about/ HTTP/1.1" 200 8
-INFO 2023-10-13 17:07:21,109 autoreload 29490 133891711588160 /home/administrator/Desktops/Desktop1/Study/django/proj_one/proj_one/urls.py changed, reloading.
-INFO 2023-10-13 17:07:21,495 autoreload 29559 127402242004800 Watching for file changes with StatReloader
-INFO 2023-10-13 17:07:58,288 autoreload 29559 127402242004800 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:07:58,704 autoreload 29594 130764607293248 Watching for file changes with StatReloader
-INFO 2023-10-13 17:09:50,666 autoreload 29594 130764607293248 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:09:51,045 autoreload 29637 136366440531776 Watching for file changes with StatReloader
-INFO 2023-10-13 17:10:10,405 views 29637 136366400374528 About page accessed.
-INFO 2023-10-13 17:10:10,407 basehttp 29637 136366400374528 "GET /about/ HTTP/1.1" 200 8
-INFO 2023-10-13 17:10:33,744 views 29637 136366400374528 Index page accessed.
-INFO 2023-10-13 17:10:33,745 basehttp 29637 136366400374528 "GET / HTTP/1.1" 200 13
-INFO 2023-10-13 17:10:52,945 views 29637 136366400374528 Index page accessed.
-INFO 2023-10-13 17:10:52,946 basehttp 29637 136366400374528 "GET / HTTP/1.1" 200 13
-INFO 2023-10-13 17:23:26,637 autoreload 29983 140482606192448 Watching for file changes with StatReloader
-INFO 2023-10-13 17:28:26,378 autoreload 29983 140482606192448 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:28:26,820 autoreload 30055 138330081138496 Watching for file changes with StatReloader
-INFO 2023-10-13 17:28:31,254 views 30055 138330040981248 Index page accessed.
-INFO 2023-10-13 17:28:31,255 basehttp 30055 138330040981248 "GET / HTTP/1.1" 200 116
-INFO 2023-10-13 17:29:58,710 autoreload 30055 138330081138496 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:29:59,072 autoreload 30100 124170233837376 Watching for file changes with StatReloader
-INFO 2023-10-13 17:30:02,531 views 30100 124170121770752 Index page accessed.
-INFO 2023-10-13 17:30:02,532 basehttp 30100 124170121770752 "GET / HTTP/1.1" 200 117
-INFO 2023-10-13 17:31:27,744 autoreload 30100 124170233837376 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:31:28,150 autoreload 30148 134795167889216 Watching for file changes with StatReloader
-INFO 2023-10-13 17:31:37,542 views 30148 134795127731968 About page accessed.
-INFO 2023-10-13 17:31:37,544 basehttp 30148 134795127731968 "GET /about/ HTTP/1.1" 200 406
-INFO 2023-10-13 17:34:30,324 autoreload 30148 134795167889216 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:34:30,696 autoreload 30212 130681367168832 Watching for file changes with StatReloader
-INFO 2023-10-13 17:34:46,983 autoreload 30212 130681367168832 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:34:47,377 autoreload 30244 138036940134208 Watching for file changes with StatReloader
-INFO 2023-10-13 17:34:54,307 views 30244 138036826339072 Index page accessed.
-INFO 2023-10-13 17:34:54,309 basehttp 30244 138036826339072 "GET / HTTP/1.1" 200 117
-INFO 2023-10-13 17:36:54,717 autoreload 30244 138036940134208 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask1_app/views.py changed, reloading.
-INFO 2023-10-13 17:36:55,154 autoreload 30307 128042346698560 Watching for file changes with StatReloader
-INFO 2023-10-13 17:37:01,264 views 30307 128042236114688 About page accessed.
-INFO 2023-10-13 17:37:01,267 basehttp 30307 128042236114688 "GET /about/ HTTP/1.1" 200 406
+INFO 2023-10-15 08:09:32,444 autoreload 13406 127749810566976 Watching for file changes with StatReloader
+WARNING 2023-10-15 08:09:53,960 log 13406 127749770041088 Not Found: /favicon.ico
+WARNING 2023-10-15 08:09:53,961 basehttp 13406 127749770041088 "GET /favicon.ico HTTP/1.1" 404 2555
+WARNING 2023-10-15 08:10:01,122 log 13406 127749752469248 Not Found: /favicon.ico
+WARNING 2023-10-15 08:10:01,123 basehttp 13406 127749752469248 "GET /favicon.ico HTTP/1.1" 404 2555
+WARNING 2023-10-15 08:10:02,093 log 13406 127749744076544 Not Found: /favicon.ico
+WARNING 2023-10-15 08:10:02,094 basehttp 13406 127749744076544 "GET /favicon.ico HTTP/1.1" 404 2550
+INFO 2023-10-15 08:10:03,175 basehttp 13406 127749735683840 "GET / HTTP/1.1" 200 115
+WARNING 2023-10-15 08:10:03,272 log 13406 127749735683840 Not Found: /favicon.ico
+WARNING 2023-10-15 08:10:03,274 basehttp 13406 127749735683840 "GET /favicon.ico HTTP/1.1" 404 2550
+INFO 2023-10-15 08:10:11,861 basehttp 13406 127749735683840 "GET /about HTTP/1.1" 301 0
+INFO 2023-10-15 08:10:11,926 basehttp 13406 127749735683840 "GET /about/ HTTP/1.1" 200 406
+WARNING 2023-10-15 08:11:05,306 log 13406 127749735683840 Not Found: /favicon.ico
+WARNING 2023-10-15 08:11:05,307 basehttp 13406 127749735683840 "GET /favicon.ico HTTP/1.1" 404 2550
+INFO 2023-10-15 17:38:37,134 autoreload 17343 130092496791360 Watching for file changes with StatReloader

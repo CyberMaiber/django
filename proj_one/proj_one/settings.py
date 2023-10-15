@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-lp%y_3d%a3e6(9xe66d69f^jlab&g+%5+6chnuhhx*$v-+2s7k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['203.0.113.90',
+                 '127.0.0.1',
+                 '*']
 
 
 # Application definition
@@ -38,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hometask1_app',
+    'hometask2_app',
 ]
 
 MIDDLEWARE = [
@@ -147,6 +150,16 @@ LOGGING = {
             'filename': './log/django.log',
             'formatter': 'verbose',
         },
+        'file1': {
+            'class': 'logging.FileHandler',
+            'filename': './log/app1.log',
+            'formatter': 'verbose',
+        },
+        'file2': {
+            'class': 'logging.FileHandler',
+            'filename': './log/app2.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -154,7 +167,12 @@ LOGGING = {
             'level': 'INFO',
         },
         'hometask1_app': {
-            'handlers': ['console','file'],
+            'handlers': ['console','file1'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'hometask2_app': {
+            'handlers': ['console','file2'],
             'level': 'DEBUG',
             'propagate': True,
         },

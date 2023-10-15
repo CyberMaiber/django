@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('hometask1_app.urls')),
+    path('models/', include('hometask2_app.urls')),
 ]
