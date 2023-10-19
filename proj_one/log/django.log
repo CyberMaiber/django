@@ -13,3 +13,438 @@ INFO 2023-10-15 08:10:11,926 basehttp 13406 127749735683840 "GET /about/ HTTP/1.
 WARNING 2023-10-15 08:11:05,306 log 13406 127749735683840 Not Found: /favicon.ico
 WARNING 2023-10-15 08:11:05,307 basehttp 13406 127749735683840 "GET /favicon.ico HTTP/1.1" 404 2550
 INFO 2023-10-15 17:38:37,134 autoreload 17343 130092496791360 Watching for file changes with StatReloader
+INFO 2023-10-17 16:55:56,192 autoreload 12830 128439054055232 Watching for file changes with StatReloader
+INFO 2023-10-17 16:56:05,481 basehttp 12830 128439013529344 "GET / HTTP/1.1" 200 115
+INFO 2023-10-17 16:56:12,827 basehttp 12830 128439013529344 "GET /about HTTP/1.1" 301 0
+INFO 2023-10-17 16:56:12,855 basehttp 12830 128439013529344 "GET /about/ HTTP/1.1" 200 406
+INFO 2023-10-17 16:56:42,731 basehttp 12830 128439013529344 "GET /models/ HTTP/1.1" 200 115
+INFO 2023-10-17 16:56:54,871 basehttp 12830 128439013529344 "GET /models/about/ HTTP/1.1" 200 406
+INFO 2023-10-17 18:38:09,816 autoreload 15124 125717927696192 Watching for file changes with StatReloader
+INFO 2023-10-17 18:44:18,898 autoreload 15448 138298763155264 Watching for file changes with StatReloader
+INFO 2023-10-18 17:36:21,009 autoreload 21483 125150829885248 Watching for file changes with StatReloader
+INFO 2023-10-18 17:36:29,196 basehttp 21483 125150716491520 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 17:36:40,514 basehttp 21483 125150716491520 "GET /app3 HTTP/1.1" 301 0
+ERROR 2023-10-18 17:36:40,662 log 21483 125150716491520 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: "static'bootstrap.min.css'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py", line 10, in index
+    return render(request,'hometask3_app/base.html')
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'bootstrap.min.css''. Did you forget to register or load this tag?
+ERROR 2023-10-18 17:36:40,664 basehttp 21483 125150716491520 "GET /app3/ HTTP/1.1" 500 128697
+INFO 2023-10-18 17:38:34,967 autoreload 21903 124741168265024 Watching for file changes with StatReloader
+INFO 2023-10-18 17:38:38,884 basehttp 21903 124741127739136 "GET / HTTP/1.1" 200 115
+ERROR 2023-10-18 17:38:45,554 log 21903 124741127739136 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py", line 10, in index
+    return render(request,'hometask3_app/base.html')
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'. Did you forget to register or load this tag?
+ERROR 2023-10-18 17:38:45,556 basehttp 21903 124741127739136 "GET /app3/ HTTP/1.1" 500 128326
+WARNING 2023-10-18 17:39:42,756 log 21903 124741127739136 Not Found: /static
+WARNING 2023-10-18 17:39:42,757 basehttp 21903 124741127739136 "GET /static HTTP/1.1" 404 2640
+INFO 2023-10-18 17:42:23,302 autoreload 22304 134661982013248 Watching for file changes with StatReloader
+WARNING 2023-10-18 17:42:29,269 log 22304 134661941487360 Not Found: /static
+WARNING 2023-10-18 17:42:29,271 basehttp 22304 134661941487360 "GET /static HTTP/1.1" 404 2640
+INFO 2023-10-18 17:44:21,596 autoreload 22304 134661982013248 /home/administrator/Desktops/Desktop1/Study/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-18 17:44:21,970 autoreload 22391 137143389583168 Watching for file changes with StatReloader
+INFO 2023-10-18 17:44:27,387 basehttp 22391 137143349057280 "GET / HTTP/1.1" 200 115
+ERROR 2023-10-18 17:44:36,616 log 22391 137143349057280 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: "static'bootstrap.min.css'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py", line 10, in index
+    return render(request,'hometask3_app/base.html')
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'bootstrap.min.css''. Did you forget to register or load this tag?
+ERROR 2023-10-18 17:44:36,618 basehttp 22391 137143349057280 "GET /app3/ HTTP/1.1" 500 128697
+INFO 2023-10-18 17:46:43,048 autoreload 22772 125388970321728 Watching for file changes with StatReloader
+INFO 2023-10-18 17:46:46,919 basehttp 22772 125388929795840 "GET / HTTP/1.1" 200 115
+ERROR 2023-10-18 17:46:52,188 log 22772 125388929795840 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py", line 10, in index
+    return render(request,'hometask3_app/base.html')
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'. Did you forget to register or load this tag?
+ERROR 2023-10-18 17:46:52,190 basehttp 22772 125388929795840 "GET /app3/ HTTP/1.1" 500 128378
+INFO 2023-10-18 17:47:50,636 autoreload 23113 136180173637440 Watching for file changes with StatReloader
+ERROR 2023-10-18 17:47:54,559 log 23113 136180058289920 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py", line 10, in index
+    return render(request,'hometask3_app/base.html')
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' "bootstrap.min.css"' from 'static "bootstrap.min.css"'
+ERROR 2023-10-18 17:47:54,561 basehttp 23113 136180058289920 "GET /app3/ HTTP/1.1" 500 133518
+INFO 2023-10-18 17:48:26,095 autoreload 23189 124806752954176 Watching for file changes with StatReloader
+INFO 2023-10-18 17:48:30,939 basehttp 23189 124806712428288 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 17:48:38,037 basehttp 23189 124806712428288 "GET /app3/ HTTP/1.1" 200 557
+INFO 2023-10-18 17:49:07,829 autoreload 23564 133889096464192 Watching for file changes with StatReloader
+INFO 2023-10-18 17:49:12,084 basehttp 23564 133889055938304 "GET / HTTP/1.1" 200 115
+ERROR 2023-10-18 17:49:19,761 log 23564 133889055938304 Internal Server Error: /app3/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py", line 10, in index
+    return render(request,'hometask3_app/base.html')
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'. Did you forget to register or load this tag?
+ERROR 2023-10-18 17:49:19,763 basehttp 23564 133889055938304 "GET /app3/ HTTP/1.1" 500 128258
+INFO 2023-10-18 17:51:54,703 autoreload 23927 124750877620032 Watching for file changes with StatReloader
+INFO 2023-10-18 17:51:59,889 basehttp 23927 124750837094144 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 17:52:03,573 basehttp 23927 124750837094144 "GET /app3/ HTTP/1.1" 200 583
+WARNING 2023-10-18 17:52:03,687 basehttp 23927 124750837094144 "GET /static/bootstrap.min.css HTTP/1.1" 404 1813
+WARNING 2023-10-18 17:52:26,325 log 23927 124750837094144 Not Found: /static
+WARNING 2023-10-18 17:52:26,326 basehttp 23927 124750837094144 "GET /static HTTP/1.1" 404 2640
+WARNING 2023-10-18 17:52:38,636 basehttp 23927 124750837094144 "GET /static/bootstrap.min.css HTTP/1.1" 404 1813
+INFO 2023-10-18 17:53:10,121 autoreload 24327 137375033775936 Watching for file changes with StatReloader
+INFO 2023-10-18 17:53:14,182 basehttp 24327 137374993250048 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 17:53:22,494 basehttp 24327 137374993250048 "GET /app3/ HTTP/1.1" 200 583
+WARNING 2023-10-18 17:53:22,618 basehttp 24327 137374993250048 "GET /static/bootstrap.min.css HTTP/1.1" 404 1813
+INFO 2023-10-18 17:55:15,655 autoreload 24327 137375033775936 /home/administrator/Desktops/Desktop1/Study/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-18 17:55:16,079 autoreload 24682 130588736468800 Watching for file changes with StatReloader
+INFO 2023-10-18 17:55:22,265 basehttp 24682 130588695942912 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 17:55:28,008 basehttp 24682 130588695942912 "GET /app3/ HTTP/1.1" 200 583
+WARNING 2023-10-18 17:55:28,123 basehttp 24682 130588695942912 "GET /static/bootstrap.min.css HTTP/1.1" 404 1813
+INFO 2023-10-18 17:56:04,502 autoreload 25047 130030804698944 Watching for file changes with StatReloader
+INFO 2023-10-18 17:56:08,131 basehttp 25047 130030764173056 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 17:56:16,143 basehttp 25047 130030764173056 "GET /app3/ HTTP/1.1" 200 583
+WARNING 2023-10-18 17:56:16,275 basehttp 25047 130030764173056 "GET /static/bootstrap.min.css HTTP/1.1" 404 1813
+INFO 2023-10-18 17:58:32,100 autoreload 25409 123392576956224 Watching for file changes with StatReloader
+INFO 2023-10-18 17:58:35,919 basehttp 25409 123392464254720 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 17:58:41,477 basehttp 25409 123392464254720 "GET /app3/ HTTP/1.1" 200 583
+INFO 2023-10-18 17:58:41,607 basehttp 25409 123392464254720 "GET /static/bootstrap.min.css HTTP/1.1" 200 232948
+WARNING 2023-10-18 17:58:54,622 log 25409 123392464254720 Not Found: /app3/static
+WARNING 2023-10-18 17:58:54,624 basehttp 25409 123392464254720 "GET /app3/static HTTP/1.1" 404 2888
+WARNING 2023-10-18 17:59:09,762 log 25409 123392464254720 Not Found: /app3/static
+WARNING 2023-10-18 17:59:09,763 basehttp 25409 123392464254720 "GET /app3/static HTTP/1.1" 404 2888
+INFO 2023-10-18 17:59:21,451 basehttp 25409 123392464254720 "GET /app3/ HTTP/1.1" 200 583
+INFO 2023-10-18 17:59:23,616 basehttp 25409 123392464254720 "GET /app3/ HTTP/1.1" 200 583
+INFO 2023-10-18 17:59:24,641 basehttp 25409 123392464254720 "GET /app3/about/ HTTP/1.1" 200 406
+INFO 2023-10-18 19:17:10,786 autoreload 26971 136680520587072 Watching for file changes with StatReloader
+INFO 2023-10-18 19:17:16,664 basehttp 26971 136680480061184 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 19:17:26,302 basehttp 26971 136680480061184 "GET /app3/ HTTP/1.1" 200 583
+WARNING 2023-10-18 19:17:32,260 log 26971 136680480061184 Not Found: /app3/5/5
+WARNING 2023-10-18 19:17:32,262 basehttp 26971 136680480061184 "GET /app3/5/5 HTTP/1.1" 404 3107
+INFO 2023-10-18 19:17:48,235 basehttp 26971 136680480061184 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-18 19:18:24,569 autoreload 26971 136680520587072 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-18 19:18:24,949 autoreload 27391 135106312214336 Watching for file changes with StatReloader
+INFO 2023-10-18 19:18:30,116 basehttp 27391 135106271688448 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 19:18:35,465 basehttp 27391 135106271688448 "GET /app3/ HTTP/1.1" 200 583
+INFO 2023-10-18 19:18:45,888 basehttp 27391 135106271688448 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-18 19:19:30,566 autoreload 27391 135106312214336 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-18 19:19:30,990 autoreload 27761 131520677746496 Watching for file changes with StatReloader
+INFO 2023-10-18 19:19:36,640 basehttp 27761 131520637220608 "GET / HTTP/1.1" 200 115
+INFO 2023-10-18 19:19:43,146 basehttp 27761 131520637220608 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-18 19:20:54,800 autoreload 27761 131520677746496 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-18 19:20:55,221 autoreload 28106 124745221531456 Watching for file changes with StatReloader
+INFO 2023-10-18 19:21:38,611 basehttp 28106 124745110517504 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-18 19:21:39,607 basehttp 28106 124745110517504 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-18 19:23:00,613 autoreload 28106 124745221531456 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-18 19:23:01,039 autoreload 28209 129141518067520 Watching for file changes with StatReloader
+INFO 2023-10-18 19:23:03,632 basehttp 28209 129141410432768 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-18 19:23:44,190 autoreload 28209 129141518067520 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-18 19:23:44,569 autoreload 28250 136254074525504 Watching for file changes with StatReloader
+INFO 2023-10-18 19:23:46,743 basehttp 28250 136254033999616 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-18 19:23:50,003 basehttp 28250 136254033999616 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 10:38:05,726 basehttp 28250 136254033999616 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 10:38:35,227 autoreload 28250 136254074525504 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-19 10:38:35,647 autoreload 31561 125902145746752 Watching for file changes with StatReloader
+INFO 2023-10-19 10:45:03,170 autoreload 31561 125902145746752 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-19 10:45:03,629 autoreload 31620 134087219427136 Watching for file changes with StatReloader
+INFO 2023-10-19 10:45:09,021 basehttp 31620 134087178901248 "GET / HTTP/1.1" 200 115
+WARNING 2023-10-19 10:45:18,619 log 31620 134087178901248 Not Found: /app3/5/5
+WARNING 2023-10-19 10:45:18,620 basehttp 31620 134087178901248 "GET /app3/5/5 HTTP/1.1" 404 3107
+INFO 2023-10-19 10:45:30,956 basehttp 31620 134087178901248 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 10:46:16,975 autoreload 32021 123649792980800 Watching for file changes with StatReloader
+INFO 2023-10-19 10:46:18,991 basehttp 32021 123649752454912 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-19 10:46:20,310 basehttp 32021 123649752454912 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-19 10:46:20,913 basehttp 32021 123649752454912 "GET /app3/orders/5/5 HTTP/1.1" 200 675
+INFO 2023-10-19 10:53:23,393 autoreload 32021 123649792980800 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-19 10:53:23,789 autoreload 32114 136719842432832 Watching for file changes with StatReloader
+INFO 2023-10-19 10:53:27,146 basehttp 32114 136719801906944 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 10:57:54,563 basehttp 32114 136719801906944 "GET /app3/orders/5/5 HTTP/1.1" 200 807
+INFO 2023-10-19 10:58:00,384 autoreload 32189 130748095846208 Watching for file changes with StatReloader
+INFO 2023-10-19 10:58:04,579 basehttp 32189 130748055320320 "GET /app3/orders/5/5 HTTP/1.1" 200 807
+INFO 2023-10-19 10:58:37,655 autoreload 32247 140453738362688 Watching for file changes with StatReloader
+INFO 2023-10-19 10:58:40,287 basehttp 32247 140453697836800 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 10:58:41,283 basehttp 32247 140453697836800 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 10:58:41,886 basehttp 32247 140453697836800 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 10:59:27,890 autoreload 32247 140453738362688 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-19 10:59:28,315 autoreload 32312 138859548657472 Watching for file changes with StatReloader
+INFO 2023-10-19 10:59:29,827 basehttp 32312 138859508131584 "GET /app3/orders/5/5 HTTP/1.1" 200 798
+INFO 2023-10-19 11:00:14,437 autoreload 32312 138859548657472 /home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py changed, reloading.
+INFO 2023-10-19 11:00:14,854 autoreload 32359 134451380700992 Watching for file changes with StatReloader
+INFO 2023-10-19 11:00:16,976 basehttp 32359 134451266844416 "GET /app3/orders/5/5 HTTP/1.1" 200 763
+INFO 2023-10-19 11:00:42,386 basehttp 32359 134451266844416 "GET /app3/orders/5/5 HTTP/1.1" 200 680
+INFO 2023-10-19 11:03:27,922 autoreload 32601 126880647317312 Watching for file changes with StatReloader
+INFO 2023-10-19 11:03:33,683 basehttp 32601 126880606791424 "GET / HTTP/1.1" 200 115
+INFO 2023-10-19 11:03:38,376 basehttp 32601 126880606791424 "GET /app3/ HTTP/1.1" 200 583
+WARNING 2023-10-19 11:03:43,113 log 32601 126880606791424 Not Found: /app3/5/5
+WARNING 2023-10-19 11:03:43,115 basehttp 32601 126880606791424 "GET /app3/5/5 HTTP/1.1" 404 3107
+INFO 2023-10-19 11:03:52,963 basehttp 32601 126880606791424 "GET /app3/orders/5/5 HTTP/1.1" 200 680
+INFO 2023-10-19 11:03:59,130 basehttp 32601 126880606791424 "GET /app3/orders/5/6 HTTP/1.1" 200 680
+INFO 2023-10-19 11:04:03,904 basehttp 32601 126880606791424 "GET /app3/orders/8/6 HTTP/1.1" 200 784
+INFO 2023-10-19 11:04:11,578 basehttp 32601 126880606791424 "GET /app3/orders/5/5 HTTP/1.1" 200 680
+INFO 2023-10-19 11:04:17,343 basehttp 32601 126880606791424 "GET /app3/orders/6/6 HTTP/1.1" 200 680
+INFO 2023-10-19 11:04:23,675 basehttp 32601 126880606791424 "GET /app3/orders/10/6 HTTP/1.1" 200 681
+INFO 2023-10-19 11:04:30,141 basehttp 32601 126880606791424 "GET /app3/orders/1/20 HTTP/1.1" 200 681
+INFO 2023-10-19 11:04:40,016 basehttp 32601 126880606791424 "GET /app3/orders/2/300 HTTP/1.1" 200 1332
+INFO 2023-10-19 11:04:48,527 basehttp 32601 126880606791424 "GET /app3/orders/1/300 HTTP/1.1" 200 1566
+INFO 2023-10-19 11:05:05,373 basehttp 32601 126880606791424 "GET /app3/orders/1/300 HTTP/1.1" 200 1668
+INFO 2023-10-19 11:05:20,141 basehttp 32601 126880606791424 "GET /app3/orders/1/300 HTTP/1.1" 200 4744
+INFO 2023-10-19 11:05:33,216 basehttp 32601 126880606791424 "GET /app3/orders/1/10 HTTP/1.1" 200 681
+ERROR 2023-10-19 11:08:01,701 log 32601 126880606791424 Internal Server Error: /app3/orders/1/10
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'len(goods)>0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/proj_one/hometask3_app/views.py", line 28, in orders_of_client
+    return render(request,'hometask3_app/ordrs_clnt.html', {'goods':goods_of_client, 'client': client, 'lst_days':days_count})
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/administrator/Desktops/Desktop1/Study/django/env/lib/python3.7/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(goods)>0' from 'len(goods)>0'
+ERROR 2023-10-19 11:08:01,703 basehttp 32601 126880606791424 "GET /app3/orders/1/10 HTTP/1.1" 500 191013
+INFO 2023-10-19 11:09:23,351 basehttp 32601 126880606791424 "GET /app3/orders/1/10 HTTP/1.1" 200 777
+INFO 2023-10-19 11:09:28,765 basehttp 32601 126880606791424 "GET /app3/orders/1/300 HTTP/1.1" 200 4894
+INFO 2023-10-19 11:09:33,403 basehttp 32601 126880606791424 "GET /app3/orders/1/11 HTTP/1.1" 200 777
+INFO 2023-10-19 11:09:38,416 basehttp 32601 126880606791424 "GET /app3/orders/1/300 HTTP/1.1" 200 4894
+INFO 2023-10-19 11:09:40,858 basehttp 32601 126880606791424 "GET /app3/orders/1/30 HTTP/1.1" 200 777
+INFO 2023-10-19 11:09:44,775 basehttp 32601 126880606791424 "GET /app3/orders/1/40 HTTP/1.1" 200 1317

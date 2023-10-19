@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hometask1_app',
     'hometask2_app',
+    'hometask3_app',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,9 @@ ROOT_URLCONF = 'proj_one.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -160,6 +163,11 @@ LOGGING = {
             'filename': './log/app2.log',
             'formatter': 'verbose',
         },
+        'file3': {
+            'class': 'logging.FileHandler',
+            'filename': './log/app3.log',
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django': {
@@ -173,6 +181,11 @@ LOGGING = {
         },
         'hometask2_app': {
             'handlers': ['console','file2'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'hometask3_app': {
+            'handlers': ['console','file3'],
             'level': 'DEBUG',
             'propagate': True,
         },
