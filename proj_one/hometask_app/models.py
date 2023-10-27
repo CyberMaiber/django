@@ -18,9 +18,10 @@ class GoodOne(models.Model):
     price = models.DecimalField(max_digits=12,decimal_places=2) #цена товара
     count = models.IntegerField()#количество товара
     date_added = models.DateField(default=timezone.now)#дата поступления товара
-    
+    image_file = models.CharField(max_length=100, default='noimage.png') #имя файла с изображением товара
+
     def __str__(self) -> str:
-        return f'Good|ID:{self.pk}, Name:{self.name}, Descr:{self.descr}, price:{self.price}, count:{self.count}, date_added:{self.date_added}'
+        return f'Good|ID:{self.pk}, Name:{self.name}, Descr:{self.descr}, price:{self.price}, count:{self.count}, date_added:{self.date_added}, image_file:{self.image_file}'
 
 class Order(models.Model):
     customer = models.ForeignKey(Client, on_delete=models.CASCADE) # покупатель (ссылка на покупателя)

@@ -52,6 +52,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# MEDIA_URL = '/static/media/'
+# MEDIA_ROOT = BASE_DIR / 'static/media'
+
 ROOT_URLCONF = 'proj_one.urls'
 
 TEMPLATES = [
@@ -123,6 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_APP = BASE_DIR / 'hometask_app/static'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

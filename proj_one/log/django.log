@@ -570,3 +570,882 @@ ERROR 2023-10-27 18:47:52,996 basehttp 5140 134010596992768 "GET /orders/3/3 HTT
 INFO 2023-10-27 18:48:19,090 basehttp 5140 134010596992768 "GET /orders/3/3 HTTP/1.1" 200 766
 INFO 2023-10-27 18:48:24,359 basehttp 5140 134010596992768 "GET /orders/3/100 HTTP/1.1" 200 2050
 INFO 2023-10-27 18:48:30,389 basehttp 5140 134010596992768 "GET /orders/3/300 HTTP/1.1" 200 4406
+INFO 2023-10-27 20:04:02,084 autoreload 7663 137115512047424 Watching for file changes with StatReloader
+INFO 2023-10-27 20:04:04,700 basehttp 7663 137115471628032 "GET / HTTP/1.1" 200 573
+WARNING 2023-10-27 20:04:04,756 log 7663 137115471628032 Not Found: /favicon.ico
+WARNING 2023-10-27 20:04:04,757 basehttp 7663 137115471628032 "GET /favicon.ico HTTP/1.1" 404 2839
+INFO 2023-10-27 20:04:16,298 basehttp 7663 137115471628032 "GET /goods HTTP/1.1" 301 0
+ERROR 2023-10-27 20:04:16,332 log 7663 137115471628032 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 33, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 968, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 1375, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''goodedit\'' from ''goodedit\''
+ERROR 2023-10-27 20:04:16,333 basehttp 7663 137115471628032 "GET /goods/ HTTP/1.1" 500 203194
+INFO 2023-10-27 20:05:08,731 autoreload 7821 127168647526208 Watching for file changes with StatReloader
+ERROR 2023-10-27 20:05:11,430 log 7821 127168607106816 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 33, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 968, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 1375, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''index\'' from ''index\''
+ERROR 2023-10-27 20:05:11,432 basehttp 7821 127168607106816 "GET /goods/ HTTP/1.1" 500 203137
+INFO 2023-10-27 20:05:35,663 autoreload 7871 135145568474944 Watching for file changes with StatReloader
+INFO 2023-10-27 20:05:38,478 basehttp 7871 135145528055552 "GET /goods/ HTTP/1.1" 200 13475
+INFO 2023-10-27 20:06:02,578 basehttp 7871 135145528055552 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 20:06:02,682 basehttp 7871 135145528055552 "GET /static/bootstrap.min.css HTTP/1.1" 200 232948
+INFO 2023-10-27 20:06:02,682 basehttp 7871 135145528055552 - Broken pipe from ('127.0.0.1', 42648)
+
+INFO 2023-10-27 20:06:08,937 basehttp 7871 135145528055552 "GET /goods/ HTTP/1.1" 200 13875
+INFO 2023-10-27 20:53:50,222 autoreload 7871 135145568474944 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 20:53:50,387 autoreload 8479 131918844901184 Watching for file changes with StatReloader
+INFO 2023-10-27 20:54:16,742 autoreload 8548 131956154902336 Watching for file changes with StatReloader
+INFO 2023-10-27 20:54:43,592 autoreload 8618 130618957862720 Watching for file changes with StatReloader
+INFO 2023-10-27 20:56:42,142 autoreload 8682 126929845729088 Watching for file changes with StatReloader
+INFO 2023-10-27 20:56:45,720 basehttp 8682 126929805309696 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 20:57:52,814 autoreload 8682 126929845729088 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 20:57:52,962 autoreload 8798 125140588066624 Watching for file changes with StatReloader
+INFO 2023-10-27 21:02:28,904 autoreload 9057 137562621486912 Watching for file changes with StatReloader
+ERROR 2023-10-27 21:02:51,042 log 9057 137562581067520 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 41, in good_add_image
+    form = AddImageToGoodForm(good_id=good_id)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py", line 13, in __init__
+    good = forms.TextInput(initial=GoodOne.objects.filter(pk=good_id).first().__str__())
+TypeError: __init__() got an unexpected keyword argument 'initial'
+ERROR 2023-10-27 21:02:51,042 basehttp 9057 137562581067520 "GET /goodedit/3 HTTP/1.1" 500 71336
+INFO 2023-10-27 21:03:59,791 autoreload 9057 137562621486912 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:03:59,943 autoreload 9145 124349170206528 Watching for file changes with StatReloader
+ERROR 2023-10-27 21:04:04,286 log 9145 124349129787136 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 41, in good_add_image
+    form = AddImageToGoodForm(good_id=good_id)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py", line 11, in __init__
+    good = forms.TextInput(initial=GoodOne.objects.filter(pk=good_id).first().__str__())
+TypeError: __init__() got an unexpected keyword argument 'initial'
+ERROR 2023-10-27 21:04:04,286 basehttp 9145 124349129787136 "GET /goodedit/3 HTTP/1.1" 500 71752
+INFO 2023-10-27 21:06:40,689 autoreload 9145 124349170206528 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:06:40,858 autoreload 9204 128752567879488 Watching for file changes with StatReloader
+ERROR 2023-10-27 21:06:43,696 log 9204 128752527460096 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 41, in good_add_image
+    form = AddImageToGoodForm(good_id=good_id)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py", line 12, in __init__
+    self.good = forms.TextInput(initial=stuff.__str__())
+TypeError: __init__() got an unexpected keyword argument 'initial'
+ERROR 2023-10-27 21:06:43,697 basehttp 9204 128752527460096 "GET /goodedit/3 HTTP/1.1" 500 72001
+INFO 2023-10-27 21:08:47,392 autoreload 9204 128752567879488 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:08:47,591 autoreload 9258 129587801532224 Watching for file changes with StatReloader
+ERROR 2023-10-27 21:08:49,536 log 9258 129587686143744 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 41, in good_add_image
+    form = AddImageToGoodForm(good_id=good_id)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py", line 13, in __init__
+    self.image = forms.ImageField(default=stuff.image_file)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/fields.py", line 565, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'default'
+ERROR 2023-10-27 21:08:49,536 basehttp 9258 129587686143744 "GET /goodedit/3 HTTP/1.1" 500 76439
+INFO 2023-10-27 21:10:09,518 autoreload 9258 129587801532224 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/models.py changed, reloading.
+INFO 2023-10-27 21:10:09,701 autoreload 9308 131644046325568 Watching for file changes with StatReloader
+ERROR 2023-10-27 21:10:13,620 log 9308 131644005906176 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 41, in good_add_image
+    form = AddImageToGoodForm(good_id=good_id)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py", line 13, in __init__
+    self.image = forms.ImageField(default=stuff.image_file)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/fields.py", line 565, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'default'
+ERROR 2023-10-27 21:10:13,621 basehttp 9308 131644005906176 "GET /goodedit/3 HTTP/1.1" 500 76463
+ERROR 2023-10-27 21:11:20,259 log 9308 131644005906176 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 41, in good_add_image
+    form = AddImageToGoodForm(good_id=good_id)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py", line 13, in __init__
+    self.image = forms.ImageField(default=stuff.image_file)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/fields.py", line 565, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'default'
+ERROR 2023-10-27 21:11:20,259 basehttp 9308 131644005906176 "GET /goodedit/3 HTTP/1.1" 500 76463
+INFO 2023-10-27 21:19:56,926 autoreload 9308 131644046325568 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:19:57,088 autoreload 9432 131642156623680 Watching for file changes with StatReloader
+ERROR 2023-10-27 21:20:01,006 log 9432 131642116204288 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 41, in good_add_image
+    form = AddImageToGoodForm(good_id=good_id)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py", line 13, in __init__
+    self.image = forms.ImageField(upload_to='hometask_app')  #default=stuff.image_file
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/fields.py", line 565, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'upload_to'
+ERROR 2023-10-27 21:20:01,007 basehttp 9432 131642116204288 "GET /goodedit/3 HTTP/1.1" 500 76546
+INFO 2023-10-27 21:20:26,463 autoreload 9432 131642156623680 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:20:26,639 autoreload 9480 138757573302080 Watching for file changes with StatReloader
+INFO 2023-10-27 21:20:28,505 basehttp 9480 138757532882688 "GET /goodedit/3 HTTP/1.1" 200 784
+ERROR 2023-10-27 21:20:31,097 log 9480 138757532882688 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 39, in good_add_image
+    form = AddImageToGoodForm(request.POST, request.Files, good_id=-1)
+AttributeError: 'WSGIRequest' object has no attribute 'Files'
+ERROR 2023-10-27 21:20:31,097 basehttp 9480 138757532882688 "POST /goodedit/3 HTTP/1.1" 500 69099
+INFO 2023-10-27 21:20:35,235 basehttp 9480 138757532882688 "GET /goodedit/3 HTTP/1.1" 200 784
+INFO 2023-10-27 21:20:37,730 basehttp 9480 138757532882688 "GET /goodedit/3 HTTP/1.1" 200 784
+INFO 2023-10-27 21:26:58,239 autoreload 9480 138757573302080 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:26:58,410 autoreload 9610 128754860377920 Watching for file changes with StatReloader
+INFO 2023-10-27 21:30:53,110 autoreload 9610 128754860377920 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-27 21:30:53,278 autoreload 9659 134172667922240 Watching for file changes with StatReloader
+INFO 2023-10-27 21:31:17,593 autoreload 9659 134172667922240 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-27 21:31:17,784 autoreload 9694 135352180680512 Watching for file changes with StatReloader
+INFO 2023-10-27 21:34:42,718 autoreload 9694 135352180680512 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-27 21:34:42,886 autoreload 9745 136211399477056 Watching for file changes with StatReloader
+INFO 2023-10-27 21:36:52,305 autoreload 9745 136211399477056 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 21:36:52,465 autoreload 9792 132278753302336 Watching for file changes with StatReloader
+INFO 2023-10-27 21:44:43,654 autoreload 9792 132278753302336 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 21:44:43,817 autoreload 9937 123378792040256 Watching for file changes with StatReloader
+INFO 2023-10-27 21:44:46,919 autoreload 9937 123378792040256 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:44:47,074 autoreload 9962 129586265413440 Watching for file changes with StatReloader
+INFO 2023-10-27 21:44:52,183 autoreload 9962 129586265413440 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/forms.py changed, reloading.
+INFO 2023-10-27 21:44:52,364 autoreload 9988 123677989939008 Watching for file changes with StatReloader
+INFO 2023-10-27 21:45:29,097 basehttp 9988 123677878253312 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 21:45:29,207 basehttp 9988 123677878253312 "GET /static/bootstrap.min.css HTTP/1.1" 200 4096
+INFO 2023-10-27 21:45:47,662 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 200 900
+INFO 2023-10-27 21:46:24,724 basehttp 9988 123677878253312 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 21:46:24,805 basehttp 9988 123677878253312 "GET /static/bootstrap.min.css HTTP/1.1" 200 4096
+INFO 2023-10-27 21:46:31,355 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 200 916
+INFO 2023-10-27 21:46:56,259 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 200 1028
+ERROR 2023-10-27 21:50:17,842 log 9988 123677878253312 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 50, in good_add_image
+    return render(request,'hometask_app/good_edit.html',{'form':form, 'good':good})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-10-27 21:50:17,842 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 500 160160
+ERROR 2023-10-27 21:51:03,788 log 9988 123677878253312 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 50, in good_add_image
+    return render(request,'hometask_app/good_edit.html',{'form':form, 'good':good})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 6: 'static', expected 'endblock'. Did you forget to register or load this tag?
+ERROR 2023-10-27 21:51:03,788 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 500 160160
+ERROR 2023-10-27 21:51:50,766 log 9988 123677878253312 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 50, in good_add_image
+    return render(request,'hometask_app/good_edit.html',{'form':form, 'good':good})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 278, in do_extends
+    nodelist = parser.parse()
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 216, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/templatetags/static.py", line 159, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/templatetags/static.py", line 133, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '+good.image_file' from ''media/hometask_app/'+good.image_file'
+ERROR 2023-10-27 21:51:50,766 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 500 174277
+INFO 2023-10-27 21:52:47,317 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 200 1091
+WARNING 2023-10-27 21:52:47,338 basehttp 9988 123677878253312 "GET /static/media/hometask_app/%20noimage.png HTTP/1.1" 404 1854
+INFO 2023-10-27 21:53:20,121 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 200 1090
+INFO 2023-10-27 21:53:22,334 basehttp 9988 123677878253312 "GET /goodedit/3 HTTP/1.1" 200 1090
+INFO 2023-10-27 21:53:22,357 basehttp 9988 123677878253312 "GET /static/media/hometask_app/noimage.png HTTP/1.1" 200 2501
+INFO 2023-10-27 21:54:44,260 autoreload 9988 123677989939008 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 21:54:44,427 autoreload 11064 124026461398848 Watching for file changes with StatReloader
+INFO 2023-10-27 21:58:17,715 basehttp 11064 124026420979456 "GET /goodedit/3 HTTP/1.1" 200 1090
+ERROR 2023-10-27 22:00:09,258 log 11064 124026420979456 Internal Server Error: /goodedit/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 44, in good_add_image
+    form = AddImageToGoodForm(request.POST, request.Files)
+AttributeError: 'WSGIRequest' object has no attribute 'Files'
+ERROR 2023-10-27 22:00:09,259 basehttp 11064 124026420979456 "POST /goodedit/3 HTTP/1.1" 500 69699
+INFO 2023-10-27 22:00:35,433 autoreload 11064 124026461398848 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:00:35,642 autoreload 11272 129563791906624 Watching for file changes with StatReloader
+INFO 2023-10-27 22:00:39,604 basehttp 11272 129563751487232 "GET /goodedit/3 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:00:40,519 basehttp 11272 129563751487232 "GET /goodedit/3 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:00:55,426 basehttp 11272 129563751487232 "POST /goodedit/3 HTTP/1.1" 200 1150
+INFO 2023-10-27 22:01:06,534 basehttp 11272 129563751487232 "POST /goodedit/3 HTTP/1.1" 200 1150
+INFO 2023-10-27 22:01:22,256 basehttp 11272 129563751487232 "POST /goodedit/3 HTTP/1.1" 200 1150
+INFO 2023-10-27 22:01:27,244 basehttp 11272 129563751487232 "POST /goodedit/3 HTTP/1.1" 200 1150
+INFO 2023-10-27 22:01:29,449 basehttp 11272 129563751487232 "GET /goodedit/1 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:01:32,711 basehttp 11272 129563751487232 "GET /goodedit/2 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:01:35,410 basehttp 11272 129563751487232 "GET /goodedit/3 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:02:21,776 basehttp 11272 129563751487232 "POST /goodedit/3 HTTP/1.1" 200 1150
+INFO 2023-10-27 22:04:10,615 autoreload 11272 129563791906624 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:04:10,767 autoreload 11635 137481458534208 Watching for file changes with StatReloader
+INFO 2023-10-27 22:04:14,465 basehttp 11635 137481418114816 "GET /goodedit/3 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:04:16,041 basehttp 11635 137481418114816 "GET /goodedit/3 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:04:17,288 basehttp 11635 137481418114816 "POST /goodedit/3 HTTP/1.1" 200 1150
+INFO 2023-10-27 22:04:37,357 autoreload 11749 139936458909504 Watching for file changes with StatReloader
+INFO 2023-10-27 22:04:46,014 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 200 16275
+ERROR 2023-10-27 22:06:37,710 log 11749 139936418490112 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 37, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'good_add_image' with no arguments not found. 1 pattern(s) tried: ['goodedit/(?P<good_id>[0-9]+)\\Z']
+ERROR 2023-10-27 22:06:37,711 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 500 242011
+ERROR 2023-10-27 22:07:19,985 log 11749 139936418490112 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 37, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'good_add_image' with no arguments not found. 1 pattern(s) tried: ['goodedit/(?P<good_id>[0-9]+)\\Z']
+ERROR 2023-10-27 22:07:19,986 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 500 242011
+ERROR 2023-10-27 22:07:22,348 log 11749 139936418490112 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 37, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'good_add_image' with no arguments not found. 1 pattern(s) tried: ['goodedit/(?P<good_id>[0-9]+)\\Z']
+ERROR 2023-10-27 22:07:22,348 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 500 242011
+INFO 2023-10-27 22:07:27,772 basehttp 11749 139936418490112 "GET / HTTP/1.1" 200 573
+ERROR 2023-10-27 22:07:32,964 log 11749 139936418490112 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 37, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'good_add_image' with no arguments not found. 1 pattern(s) tried: ['goodedit/(?P<good_id>[0-9]+)\\Z']
+ERROR 2023-10-27 22:07:32,964 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 500 242011
+ERROR 2023-10-27 22:08:27,875 log 11749 139936418490112 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 37, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'good_add_image/<good.pk>' not found. 'good_add_image/<good.pk>' is not a valid view function or pattern name.
+ERROR 2023-10-27 22:08:27,876 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 500 240559
+ERROR 2023-10-27 22:09:25,833 log 11749 139936418490112 Internal Server Error: /goods/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 37, in all_goods_list
+    return render(request,'hometask_app/all_goods.html',{'goods':goods})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/defaulttags.py", line 449, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/urls/resolvers.py", line 698, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'good_add_image' with no arguments not found. 1 pattern(s) tried: ['goodedit/(?P<good_id>[0-9]+)\\Z']
+ERROR 2023-10-27 22:09:25,834 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 500 242011
+INFO 2023-10-27 22:11:55,463 basehttp 11749 139936418490112 "GET /goods/ HTTP/1.1" 200 17367
+INFO 2023-10-27 22:11:56,921 basehttp 11749 139936418490112 "GET /goodedit/1 HTTP/1.1" 200 1090
+INFO 2023-10-27 22:11:56,955 basehttp 11749 139936418490112 "GET /static/media/hometask_app/noimage.png HTTP/1.1" 304 0
+INFO 2023-10-27 22:12:06,032 basehttp 11749 139936418490112 "POST /goodedit/1 HTTP/1.1" 200 1150
+INFO 2023-10-27 22:13:41,203 autoreload 11749 139936458909504 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:13:41,367 autoreload 12163 133680551888704 Watching for file changes with StatReloader
+INFO 2023-10-27 22:13:49,260 basehttp 12163 133680511469312 "GET /goods/ HTTP/1.1" 200 17367
+INFO 2023-10-27 22:13:51,085 basehttp 12163 133680511469312 "GET /goodedit/10 HTTP/1.1" 200 1093
+INFO 2023-10-27 22:13:58,790 basehttp 12163 133680511469312 "POST /goodedit/10 HTTP/1.1" 200 1153
+INFO 2023-10-27 22:18:14,492 autoreload 12163 133680551888704 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:18:14,665 autoreload 12319 136792002107200 Watching for file changes with StatReloader
+ERROR 2023-10-27 22:18:19,566 log 12319 136791889803008 Internal Server Error: /goodedit/10
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 45, in good_add_image
+    print(form.image.initial)
+AttributeError: 'AddImageToGoodForm' object has no attribute 'image'
+ERROR 2023-10-27 22:18:19,567 basehttp 12319 136791889803008 "POST /goodedit/10 HTTP/1.1" 500 69913
+INFO 2023-10-27 22:20:22,998 autoreload 12319 136792002107200 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:20:23,168 autoreload 12404 137246383011648 Watching for file changes with StatReloader
+INFO 2023-10-27 22:20:28,639 basehttp 12404 137246342592256 "POST /goodedit/10 HTTP/1.1" 200 1155
+INFO 2023-10-27 22:20:41,336 basehttp 12404 137246342592256 "POST /goodedit/10 HTTP/1.1" 200 1155
+INFO 2023-10-27 22:22:35,731 autoreload 12404 137246383011648 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:22:35,896 autoreload 12537 128189480171328 Watching for file changes with StatReloader
+INFO 2023-10-27 22:22:44,063 basehttp 12537 128189439751936 "POST /goodedit/10 HTTP/1.1" 200 1155
+INFO 2023-10-27 22:23:28,623 autoreload 12537 128189480171328 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:23:28,793 autoreload 12619 137060492658496 Watching for file changes with StatReloader
+INFO 2023-10-27 22:23:35,955 basehttp 12619 137060452239104 "POST /goodedit/10 HTTP/1.1" 200 1155
+INFO 2023-10-27 22:23:43,205 basehttp 12619 137060452239104 "POST /goodedit/10 HTTP/1.1" 200 1155
+INFO 2023-10-27 22:24:08,163 basehttp 12619 137060452239104 "POST /goodedit/10 HTTP/1.1" 200 1155
+INFO 2023-10-27 22:26:29,451 basehttp 12619 137060452239104 "GET /goods/ HTTP/1.1" 200 17367
+INFO 2023-10-27 22:26:30,992 basehttp 12619 137060452239104 "GET /goodedit/7 HTTP/1.1" 200 1122
+INFO 2023-10-27 22:26:35,867 basehttp 12619 137060452239104 "POST /goodedit/7 HTTP/1.1" 200 1112
+WARNING 2023-10-27 22:26:35,904 basehttp 12619 137060452239104 "GET /static/media/hometask_app/image7 HTTP/1.1" 404 1834
+INFO 2023-10-27 22:26:42,068 basehttp 12619 137060452239104 "POST /goodedit/7 HTTP/1.1" 200 1112
+WARNING 2023-10-27 22:26:42,080 basehttp 12619 137060452239104 "GET /static/media/hometask_app/image7 HTTP/1.1" 404 1834
+INFO 2023-10-27 22:26:46,279 basehttp 12619 137060452239104 "GET /goodedit/7 HTTP/1.1" 200 1112
+INFO 2023-10-27 22:26:48,731 basehttp 12619 137060452239104 "GET /goodedit/7 HTTP/1.1" 200 1112
+WARNING 2023-10-27 22:26:48,774 basehttp 12619 137060452239104 "GET /static/media/hometask_app/image7 HTTP/1.1" 404 1834
+INFO 2023-10-27 22:30:31,230 autoreload 12619 137060492658496 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-27 22:30:31,430 autoreload 12986 133152306562880 Watching for file changes with StatReloader
+INFO 2023-10-27 22:30:38,084 basehttp 12986 133152266143488 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 22:30:38,217 basehttp 12986 133152266143488 "GET /static/bootstrap.min.css HTTP/1.1" 200 4096
+INFO 2023-10-27 22:30:48,684 basehttp 12986 133152266143488 "GET /goods/ HTTP/1.1" 200 17362
+INFO 2023-10-27 22:30:50,619 basehttp 12986 133152266143488 "GET /goodedit/7 HTTP/1.1" 200 1112
+WARNING 2023-10-27 22:30:50,652 basehttp 12986 133152266143488 "GET /static/media/hometask_app/image7 HTTP/1.1" 404 1834
+INFO 2023-10-27 22:30:57,342 basehttp 12986 133152266143488 "POST /goodedit/7 HTTP/1.1" 200 1112
+WARNING 2023-10-27 22:30:57,374 basehttp 12986 133152266143488 "GET /static/media/hometask_app/image7 HTTP/1.1" 404 1834
+INFO 2023-10-27 22:31:04,301 basehttp 12986 133152266143488 "GET /goods/ HTTP/1.1" 200 17362
+INFO 2023-10-27 22:31:06,149 basehttp 12986 133152266143488 "GET /goodedit/7 HTTP/1.1" 200 1112
+WARNING 2023-10-27 22:31:06,199 basehttp 12986 133152266143488 "GET /static/media/hometask_app/image7 HTTP/1.1" 404 1834
+INFO 2023-10-27 22:32:57,052 autoreload 12986 133152306562880 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-27 22:32:57,221 autoreload 13524 135984473593664 Watching for file changes with StatReloader
+INFO 2023-10-27 22:33:13,451 autoreload 13524 135984473593664 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 22:33:13,606 autoreload 13568 130910674859840 Watching for file changes with StatReloader
+INFO 2023-10-27 22:33:24,787 basehttp 13568 130910634440448 "GET /goods/ HTTP/1.1" 200 17362
+INFO 2023-10-27 22:33:26,978 basehttp 13568 130910634440448 "GET /goodedit/7 HTTP/1.1" 200 1112
+WARNING 2023-10-27 22:33:27,014 basehttp 13568 130910634440448 "GET /static/media/hometask_app/image7 HTTP/1.1" 404 1834
+INFO 2023-10-27 22:33:31,028 basehttp 13568 130910634440448 "POST /goodedit/7 HTTP/1.1" 200 1112
+INFO 2023-10-27 22:33:31,056 basehttp 13568 130910634440448 "GET /static/media/hometask_app/image7 HTTP/1.1" 200 2172
+INFO 2023-10-27 22:33:44,781 basehttp 13568 130910634440448 "GET /goods/ HTTP/1.1" 200 17362
+INFO 2023-10-27 22:33:47,583 basehttp 13568 130910634440448 "GET /goodedit/3 HTTP/1.1" 200 1122
+INFO 2023-10-27 22:33:47,621 basehttp 13568 130910634440448 "GET /static/media/hometask_app/noimage.png HTTP/1.1" 304 0
+INFO 2023-10-27 22:33:58,117 basehttp 13568 130910634440448 "POST /goodedit/3 HTTP/1.1" 200 1112
+INFO 2023-10-27 22:33:58,134 basehttp 13568 130910634440448 "GET /static/media/hometask_app/image3 HTTP/1.1" 200 2172
+INFO 2023-10-27 22:34:06,697 basehttp 13568 130910634440448 "GET /goods/ HTTP/1.1" 200 17357
+INFO 2023-10-27 22:34:16,780 basehttp 13568 130910634440448 "GET /goodedit/7 HTTP/1.1" 200 1112
+INFO 2023-10-27 22:34:16,806 basehttp 13568 130910634440448 "GET /static/media/hometask_app/image7 HTTP/1.1" 304 0
+INFO 2023-10-27 22:34:19,595 basehttp 13568 130910634440448 "GET /goodedit/3 HTTP/1.1" 200 1112
+INFO 2023-10-27 22:34:19,633 basehttp 13568 130910634440448 "GET /static/media/hometask_app/image3 HTTP/1.1" 304 0
+INFO 2023-10-27 22:34:25,748 basehttp 13568 130910634440448 "GET /goodedit/7 HTTP/1.1" 200 1112
+INFO 2023-10-27 22:34:25,774 basehttp 13568 130910634440448 "GET /static/media/hometask_app/image7 HTTP/1.1" 304 0
+INFO 2023-10-27 22:34:28,674 basehttp 13568 130910634440448 "GET /goodedit/3 HTTP/1.1" 200 1112
+INFO 2023-10-27 22:34:28,714 basehttp 13568 130910634440448 "GET /static/media/hometask_app/image3 HTTP/1.1" 304 0
