@@ -39,9 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hometask1_app',
-    'hometask2_app',
-    'hometask3_app',
+    'hometask_app',
 ]
 
 MIDDLEWARE = [
@@ -158,34 +156,14 @@ LOGGING = {
             'filename': './log/app1.log',
             'formatter': 'verbose',
         },
-        'file2': {
-            'class': 'logging.FileHandler',
-            'filename': './log/app2.log',
-            'formatter': 'verbose',
-        },
-        'file3': {
-            'class': 'logging.FileHandler',
-            'filename': './log/app3.log',
-            'formatter': 'verbose',
-        },
     },
     'loggers': {
         'django': {
             'handlers': ['console','file'],
             'level': 'INFO',
         },
-        'hometask1_app': {
+        'hometask_app': {
             'handlers': ['console','file1'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-        'hometask2_app': {
-            'handlers': ['console','file2'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-        'hometask3_app': {
-            'handlers': ['console','file3'],
             'level': 'DEBUG',
             'propagate': True,
         },

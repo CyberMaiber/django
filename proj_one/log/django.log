@@ -448,3 +448,125 @@ INFO 2023-10-19 11:09:33,403 basehttp 32601 126880606791424 "GET /app3/orders/1/
 INFO 2023-10-19 11:09:38,416 basehttp 32601 126880606791424 "GET /app3/orders/1/300 HTTP/1.1" 200 4894
 INFO 2023-10-19 11:09:40,858 basehttp 32601 126880606791424 "GET /app3/orders/1/30 HTTP/1.1" 200 777
 INFO 2023-10-19 11:09:44,775 basehttp 32601 126880606791424 "GET /app3/orders/1/40 HTTP/1.1" 200 1317
+INFO 2023-10-25 19:42:08,902 autoreload 2000 137096766592832 Watching for file changes with StatReloader
+INFO 2023-10-25 19:42:13,689 basehttp 2000 137096726173440 "GET / HTTP/1.1" 200 115
+WARNING 2023-10-25 19:42:13,829 log 2000 137096726173440 Not Found: /favicon.ico
+WARNING 2023-10-25 19:42:13,829 basehttp 2000 137096726173440 "GET /favicon.ico HTTP/1.1" 404 2652
+INFO 2023-10-25 19:42:21,267 basehttp 2000 137096726173440 "GET /app3 HTTP/1.1" 301 0
+INFO 2023-10-25 19:42:21,280 basehttp 2000 137096726173440 "GET /app3/ HTTP/1.1" 200 583
+INFO 2023-10-25 19:42:21,345 basehttp 2000 137096726173440 "GET /static/bootstrap.min.css HTTP/1.1" 200 232948
+WARNING 2023-10-25 19:42:30,443 log 2000 137096726173440 Not Found: /app3/order/3/100
+WARNING 2023-10-25 19:42:30,444 basehttp 2000 137096726173440 "GET /app3/order/3/100 HTTP/1.1" 404 3128
+INFO 2023-10-25 19:42:37,844 basehttp 2000 137096726173440 "GET /app3/orders/3/100 HTTP/1.1" 200 1928
+INFO 2023-10-25 19:42:43,156 basehttp 2000 137096726173440 "GET /app3/ HTTP/1.1" 200 583
+INFO 2023-10-27 18:43:24,605 autoreload 4502 136816765634368 Watching for file changes with StatReloader
+INFO 2023-10-27 18:43:27,423 basehttp 4502 136816652973824 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 18:43:27,450 basehttp 4502 136816652973824 "GET /static/bootstrap.min.css HTTP/1.1" 304 0
+ERROR 2023-10-27 18:43:41,444 log 4502 136816652973824 Internal Server Error: /orders/3/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 28, in orders_of_client
+    return render(request,'hometask3_app/ordrs_clnt.html', {'goods':goods_of_client, 'client': client, 'lst_days':days_count})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: hometask3_app/ordrs_clnt.html
+ERROR 2023-10-27 18:43:41,445 basehttp 4502 136816652973824 "GET /orders/3/3 HTTP/1.1" 500 84500
+INFO 2023-10-27 18:44:19,300 autoreload 4502 136816765634368 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py changed, reloading.
+INFO 2023-10-27 18:44:19,499 autoreload 4679 126220331530048 Watching for file changes with StatReloader
+INFO 2023-10-27 18:44:22,292 basehttp 4679 126220291110656 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 18:44:22,435 basehttp 4679 126220291110656 "GET /static/bootstrap.min.css HTTP/1.1" 200 4096
+ERROR 2023-10-27 18:44:32,638 log 4679 126220291110656 Internal Server Error: /orders/3/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: hometask3_app/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 28, in orders_of_client
+    return render(request,'hometask_app/ordrs_clnt.html', {'goods':goods_of_client, 'client': client, 'lst_days':days_count})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: hometask3_app/base.html
+ERROR 2023-10-27 18:44:32,639 basehttp 4679 126220291110656 "GET /orders/3/3 HTTP/1.1" 500 131443
+INFO 2023-10-27 18:47:39,780 autoreload 5140 134010637412160 Watching for file changes with StatReloader
+INFO 2023-10-27 18:47:42,341 basehttp 5140 134010596992768 "GET / HTTP/1.1" 200 573
+INFO 2023-10-27 18:47:42,472 basehttp 5140 134010596992768 "GET /static/bootstrap.min.css HTTP/1.1" 200 4096
+ERROR 2023-10-27 18:47:52,994 log 5140 134010596992768 Internal Server Error: /orders/3/3
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: hometask3_app/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/views.py", line 28, in orders_of_client
+    return render(request,'hometask_app/ordrs_clnt.html', {'goods':goods_of_client, 'client': client, 'lst_days':days_count})
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: hometask3_app/base.html
+ERROR 2023-10-27 18:47:52,996 basehttp 5140 134010596992768 "GET /orders/3/3 HTTP/1.1" 500 131443
+INFO 2023-10-27 18:48:19,090 basehttp 5140 134010596992768 "GET /orders/3/3 HTTP/1.1" 200 766
+INFO 2023-10-27 18:48:24,359 basehttp 5140 134010596992768 "GET /orders/3/100 HTTP/1.1" 200 2050
+INFO 2023-10-27 18:48:30,389 basehttp 5140 134010596992768 "GET /orders/3/300 HTTP/1.1" 200 4406
