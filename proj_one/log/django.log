@@ -1545,3 +1545,350 @@ INFO 2023-10-28 20:13:02,915 basehttp 4137 133117564946176 "GET /admin/jsi18n/ H
 INFO 2023-10-28 20:13:06,990 basehttp 4137 133117564946176 "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
 INFO 2023-10-28 20:13:07,014 basehttp 4137 133117564946176 "GET /admin/auth/user/ HTTP/1.1" 200 8672
 INFO 2023-10-28 20:13:07,083 basehttp 4137 133117564946176 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:23:22,108 autoreload 5672 136984063379264 Watching for file changes with StatReloader
+INFO 2023-10-28 20:23:26,119 basehttp 5672 136983955371776 "GET / HTTP/1.1" 200 573
+INFO 2023-10-28 20:23:26,150 basehttp 5672 136983955371776 "GET /static/bootstrap.min.css HTTP/1.1" 200 4096
+WARNING 2023-10-28 20:23:26,154 log 5672 136983946979072 Not Found: /favicon.ico
+WARNING 2023-10-28 20:23:26,155 basehttp 5672 136983946979072 "GET /favicon.ico HTTP/1.1" 404 3037
+INFO 2023-10-28 20:23:33,184 basehttp 5672 136983946979072 "GET /admin/ HTTP/1.1" 200 4482
+INFO 2023-10-28 20:23:33,223 basehttp 5672 136983946979072 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-10-28 20:23:33,224 basehttp 5672 136983955371776 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-10-28 20:23:42,407 autoreload 5672 136984063379264 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 20:23:42,579 autoreload 5823 135558084413248 Watching for file changes with StatReloader
+INFO 2023-10-28 20:23:51,755 autoreload 5823 135558084413248 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 20:23:51,919 autoreload 5848 132301503612736 Watching for file changes with StatReloader
+INFO 2023-10-28 20:24:05,127 autoreload 5848 132301503612736 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 20:24:05,281 autoreload 5886 136204365309760 Watching for file changes with StatReloader
+INFO 2023-10-28 20:24:42,624 autoreload 5886 136204365309760 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 20:24:42,777 autoreload 5922 124100013360960 Watching for file changes with StatReloader
+INFO 2023-10-28 20:24:45,466 basehttp 5922 124099972941568 "GET /admin/ HTTP/1.1" 200 6049
+INFO 2023-10-28 20:24:49,548 basehttp 5922 124099972941568 "GET /admin/hometask_app/client/ HTTP/1.1" 200 36415
+INFO 2023-10-28 20:24:49,594 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:24:49,617 basehttp 5922 124099972941568 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-10-28 20:24:58,334 basehttp 5922 124099972941568 "GET /admin/hometask_app/client/100/change/ HTTP/1.1" 200 9047
+INFO 2023-10-28 20:24:58,358 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:24:58,358 basehttp 5922 124099962451712 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2023-10-28 20:24:58,364 basehttp 5922 124099962451712 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2023-10-28 20:24:58,368 basehttp 5922 124099962451712 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2023-10-28 20:24:58,457 basehttp 5922 124099972941568 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2023-10-28 20:25:07,820 basehttp 5922 124099972941568 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 39306
+INFO 2023-10-28 20:25:07,859 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:25:10,270 basehttp 5922 124099972941568 "GET /admin/hometask_app/order/ HTTP/1.1" 200 81747
+INFO 2023-10-28 20:25:10,314 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:25:20,399 basehttp 5922 124099972941568 "GET /admin/hometask_app/order/?p=19 HTTP/1.1" 200 7959
+INFO 2023-10-28 20:25:20,422 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:25:23,313 basehttp 5922 124099972941568 "GET /admin/hometask_app/order/?p=18 HTTP/1.1" 200 83045
+INFO 2023-10-28 20:25:23,334 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:25:55,138 basehttp 5922 124099972941568 "GET /admin/hometask_app/client/ HTTP/1.1" 200 36415
+INFO 2023-10-28 20:25:55,175 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:25:56,485 basehttp 5922 124099972941568 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 39306
+INFO 2023-10-28 20:25:56,517 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:25:57,901 basehttp 5922 124099972941568 "GET /admin/hometask_app/order/ HTTP/1.1" 200 81747
+INFO 2023-10-28 20:25:57,926 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:26:00,291 basehttp 5922 124099972941568 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 39306
+INFO 2023-10-28 20:26:00,315 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:26:02,683 basehttp 5922 124099972941568 "GET /admin/hometask_app/client/ HTTP/1.1" 200 36415
+INFO 2023-10-28 20:26:02,735 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 20:26:07,853 basehttp 5922 124099972941568 "GET /admin/hometask_app/client/100/change/ HTTP/1.1" 200 9047
+INFO 2023-10-28 20:26:07,874 basehttp 5922 124099972941568 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 21:04:05,332 basehttp 5922 124099972941568 "GET /admin/hometask_app/client/100/history/ HTTP/1.1" 200 4792
+INFO 2023-10-28 21:04:30,541 basehttp 5922 124099972941568 "GET /admin/hometask_app/client/100/change/ HTTP/1.1" 200 9047
+INFO 2023-10-28 21:16:54,296 autoreload 5922 124100013360960 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/models.py changed, reloading.
+INFO 2023-10-28 21:16:54,470 autoreload 6561 128639460214592 Watching for file changes with StatReloader
+INFO 2023-10-28 21:16:56,683 basehttp 6561 128639419795200 "GET /admin/hometask_app/client/ HTTP/1.1" 200 29131
+INFO 2023-10-28 21:16:56,719 basehttp 6561 128639419795200 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+WARNING 2023-10-28 21:16:56,794 log 6561 128639419795200 Not Found: /favicon.ico
+WARNING 2023-10-28 21:16:56,795 basehttp 6561 128639419795200 "GET /favicon.ico HTTP/1.1" 404 3037
+INFO 2023-10-28 21:17:06,683 autoreload 6561 128639460214592 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/models.py changed, reloading.
+INFO 2023-10-28 21:17:06,891 autoreload 6612 139716801001280 Watching for file changes with StatReloader
+INFO 2023-10-28 21:17:07,591 basehttp 6612 139716760844032 "GET /admin/hometask_app/client/ HTTP/1.1" 200 36415
+INFO 2023-10-28 21:17:07,607 basehttp 6612 139716760844032 "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+INFO 2023-10-28 21:18:34,735 autoreload 6612 139716801001280 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/proj_one/settings.py changed, reloading.
+INFO 2023-10-28 21:18:34,911 autoreload 6727 126525399365440 Watching for file changes with StatReloader
+INFO 2023-10-28 21:22:58,512 basehttp 6727 126525358683904 "GET /admin/ HTTP/1.1" 200 6486
+INFO 2023-10-28 21:37:36,538 autoreload 6727 126525399365440 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 21:37:36,713 autoreload 6885 137898307991360 Watching for file changes with StatReloader
+INFO 2023-10-28 21:37:41,845 basehttp 6885 137898267309824 "GET /admin/hometask_app/client/ HTTP/1.1" 200 36847
+INFO 2023-10-28 21:37:41,891 basehttp 6885 137898267309824 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+WARNING 2023-10-28 21:37:41,926 log 6885 137898267309824 Not Found: /favicon.ico
+WARNING 2023-10-28 21:37:41,926 basehttp 6885 137898267309824 "GET /favicon.ico HTTP/1.1" 404 3037
+INFO 2023-10-28 21:38:11,163 autoreload 6885 137898307991360 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 21:38:11,336 autoreload 6951 126534680872768 Watching for file changes with StatReloader
+INFO 2023-10-28 21:38:12,823 basehttp 6951 126534568376064 "GET /admin/hometask_app/client/ HTTP/1.1" 200 37071
+INFO 2023-10-28 21:38:12,853 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:38:17,743 basehttp 6951 126534568376064 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 35085
+INFO 2023-10-28 21:38:17,767 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:38:21,460 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/ HTTP/1.1" 200 53164
+INFO 2023-10-28 21:38:21,503 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:38:57,933 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=2 HTTP/1.1" 200 55086
+INFO 2023-10-28 21:38:57,978 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:38:58,011 basehttp 6951 126534568376064 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-10-28 21:39:02,739 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=4.2 HTTP/1.1" 200 56655
+INFO 2023-10-28 21:39:02,762 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:17,810 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=4 HTTP/1.1" 200 55961
+INFO 2023-10-28 21:39:17,848 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:19,547 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=2.4 HTTP/1.1" 200 55780
+INFO 2023-10-28 21:39:19,566 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:21,587 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=-2.4 HTTP/1.1" 200 56937
+INFO 2023-10-28 21:39:21,629 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:24,347 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=2.4 HTTP/1.1" 200 55780
+INFO 2023-10-28 21:39:24,368 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:32,290 basehttp 6951 126534568376064 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 35085
+INFO 2023-10-28 21:39:32,312 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:34,412 basehttp 6951 126534568376064 "GET /admin/hometask_app/client/ HTTP/1.1" 200 37071
+INFO 2023-10-28 21:39:34,452 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:35,547 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/ HTTP/1.1" 200 53164
+INFO 2023-10-28 21:39:35,577 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:38,500 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/1791/change/ HTTP/1.1" 200 37918
+INFO 2023-10-28 21:39:38,538 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:39:38,644 basehttp 6951 126534568376064 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2023-10-28 21:40:14,309 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/ HTTP/1.1" 200 53164
+INFO 2023-10-28 21:40:36,196 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=2 HTTP/1.1" 200 55086
+INFO 2023-10-28 21:40:36,237 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:40:37,877 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/18/change/?_changelist_filters=o%3D2 HTTP/1.1" 200 38697
+INFO 2023-10-28 21:40:37,911 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:41:46,524 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=2 HTTP/1.1" 200 55086
+INFO 2023-10-28 21:41:53,321 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/73/change/?_changelist_filters=o%3D2 HTTP/1.1" 200 37981
+INFO 2023-10-28 21:41:53,354 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:42:42,210 basehttp 6951 126534568376064 "GET /admin/hometask_app/goodone/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5679
+INFO 2023-10-28 21:42:42,255 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:43:02,156 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/?o=2 HTTP/1.1" 200 55086
+INFO 2023-10-28 21:43:04,873 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/76/change/?_changelist_filters=o%3D2 HTTP/1.1" 200 38956
+INFO 2023-10-28 21:43:04,901 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:43:40,886 basehttp 6951 126534568376064 "GET /admin/hometask_app/order/ HTTP/1.1" 200 53164
+INFO 2023-10-28 21:43:40,919 basehttp 6951 126534568376064 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:45:43,717 autoreload 6951 126534680872768 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 21:45:43,886 autoreload 7406 123882465724224 Watching for file changes with StatReloader
+INFO 2023-10-28 21:45:47,765 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/ HTTP/1.1" 200 52112
+INFO 2023-10-28 21:45:47,786 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:45:57,292 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/?o=2 HTTP/1.1" 200 55082
+INFO 2023-10-28 21:45:57,345 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:45:59,446 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/?o=-2 HTTP/1.1" 200 56253
+INFO 2023-10-28 21:45:59,484 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:46:01,862 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/?o=2 HTTP/1.1" 200 55082
+INFO 2023-10-28 21:46:01,890 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:46:06,220 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/?o=-2 HTTP/1.1" 200 56253
+INFO 2023-10-28 21:46:06,251 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:46:23,206 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/?o= HTTP/1.1" 200 54672
+INFO 2023-10-28 21:46:23,240 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:46:27,051 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/?o=&p=19 HTTP/1.1" 200 8547
+INFO 2023-10-28 21:46:27,078 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:46:30,017 basehttp 7406 123882357913344 "GET /admin/hometask_app/order/?o=&p=1 HTTP/1.1" 200 55480
+INFO 2023-10-28 21:46:30,071 basehttp 7406 123882357913344 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:08,598 autoreload 7406 123882465724224 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 21:49:08,806 autoreload 7571 140489157838656 Watching for file changes with StatReloader
+INFO 2023-10-28 21:49:12,546 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 43125
+INFO 2023-10-28 21:49:12,598 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:16,625 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff49 HTTP/1.1" 200 16077
+INFO 2023-10-28 21:49:16,660 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:19,971 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/? HTTP/1.1" 200 43125
+INFO 2023-10-28 21:49:20,006 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:35,540 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff20 HTTP/1.1" 200 16077
+INFO 2023-10-28 21:49:35,571 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:37,049 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/? HTTP/1.1" 200 43125
+INFO 2023-10-28 21:49:37,081 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:40,517 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff56 HTTP/1.1" 200 16077
+INFO 2023-10-28 21:49:40,542 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:42,075 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff29 HTTP/1.1" 200 16077
+INFO 2023-10-28 21:49:42,095 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:43,445 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff11 HTTP/1.1" 200 16077
+INFO 2023-10-28 21:49:43,472 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:44,283 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff12 HTTP/1.1" 200 16077
+INFO 2023-10-28 21:49:44,303 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:47,844 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/? HTTP/1.1" 200 43125
+INFO 2023-10-28 21:49:47,887 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:54,839 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff1 HTTP/1.1" 200 16056
+INFO 2023-10-28 21:49:54,855 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:49:56,642 basehttp 7571 140489050027776 "GET /admin/hometask_app/goodone/?name=stuff1 HTTP/1.1" 200 16056
+INFO 2023-10-28 21:49:56,659 basehttp 7571 140489050027776 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:51:46,139 autoreload 7571 140489157838656 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 21:51:46,305 autoreload 7766 123966249920320 Watching for file changes with StatReloader
+INFO 2023-10-28 21:51:50,242 basehttp 7766 123966209238784 "GET / HTTP/1.1" 200 573
+INFO 2023-10-28 21:51:57,264 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/ HTTP/1.1" 200 37395
+INFO 2023-10-28 21:51:57,304 basehttp 7766 123966209238784 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:51:57,349 basehttp 7766 123966199273216 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2023-10-28 21:52:04,242 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q=88 HTTP/1.1" 200 8099
+INFO 2023-10-28 21:52:04,267 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:52:34,764 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q=*1 HTTP/1.1" 200 7033
+INFO 2023-10-28 21:52:34,808 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:52:39,144 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q=*1* HTTP/1.1" 200 7039
+INFO 2023-10-28 21:52:39,174 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:53:27,380 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q= HTTP/1.1" 200 39947
+INFO 2023-10-28 21:53:27,399 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:53:42,701 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q=User%256 HTTP/1.1" 200 7041
+INFO 2023-10-28 21:53:42,728 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:53:48,220 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q=User*6 HTTP/1.1" 200 7041
+INFO 2023-10-28 21:53:48,249 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:53:52,251 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q=User%216 HTTP/1.1" 200 7041
+INFO 2023-10-28 21:53:52,274 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 21:53:58,646 basehttp 7766 123966209238784 "GET /admin/hometask_app/client/?q=User6 HTTP/1.1" 200 11402
+INFO 2023-10-28 21:53:58,665 basehttp 7766 123966199273216 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:07:54,040 autoreload 7766 123966249920320 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:07:54,192 autoreload 8252 129826642339648 Watching for file changes with StatReloader
+INFO 2023-10-28 22:07:58,181 basehttp 8252 129826526590720 "GET /admin/hometask_app/order/ HTTP/1.1" 200 52112
+INFO 2023-10-28 22:07:58,223 basehttp 8252 129826526590720 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+ERROR 2023-10-28 22:08:00,708 log 8252 129826526590720 Internal Server Error: /admin/hometask_app/order/1/change/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (total_price) specified for Order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 714, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (total_price) specified for Order. Check fields/fieldsets/exclude attributes of class OrderAdminView.
+ERROR 2023-10-28 22:08:00,710 basehttp 8252 129826526590720 "GET /admin/hometask_app/order/1/change/ HTTP/1.1" 500 139332
+INFO 2023-10-28 22:09:06,365 basehttp 8252 129826526590720 "GET /admin/ HTTP/1.1" 200 6486
+INFO 2023-10-28 22:09:11,256 basehttp 8252 129826526590720 "GET /admin/hometask_app/order/ HTTP/1.1" 200 52112
+INFO 2023-10-28 22:09:11,290 basehttp 8252 129826526590720 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+ERROR 2023-10-28 22:09:17,182 log 8252 129826526590720 Internal Server Error: /admin/hometask_app/order/2/change/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (total_price) specified for Order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 714, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (total_price) specified for Order. Check fields/fieldsets/exclude attributes of class OrderAdminView.
+ERROR 2023-10-28 22:09:17,183 basehttp 8252 129826526590720 "GET /admin/hometask_app/order/2/change/ HTTP/1.1" 500 138612
+INFO 2023-10-28 22:11:30,509 autoreload 8252 129826642339648 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:11:30,667 autoreload 8413 132158970775360 Watching for file changes with StatReloader
+INFO 2023-10-28 22:11:34,804 autoreload 8413 132158970775360 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:11:34,961 autoreload 8434 136559003666240 Watching for file changes with StatReloader
+INFO 2023-10-28 22:12:22,480 autoreload 8434 136559003666240 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:12:22,637 autoreload 8461 132290894636864 Watching for file changes with StatReloader
+ERROR 2023-10-28 22:12:24,831 log 8461 132290853955328 Internal Server Error: /admin/hometask_app/order/2/change/
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 710, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/models.py", line 563, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/forms/models.py", line 276, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (total_price) specified for Order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/sites.py", line 232, in inner
+    return view(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1660, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/utils/decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1540, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 1575, in _changeform_view
+    request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+  File "/home/administrator/Desktops/Desktop1/study/django/env/lib/python3.7/site-packages/django/contrib/admin/options.py", line 714, in get_form
+    % (e, self.__class__.__name__)
+django.core.exceptions.FieldError: Unknown field(s) (total_price) specified for Order. Check fields/fieldsets/exclude attributes of class OrderAdminView.
+ERROR 2023-10-28 22:12:24,833 basehttp 8461 132290853955328 "GET /admin/hometask_app/order/2/change/ HTTP/1.1" 500 138632
+INFO 2023-10-28 22:12:55,053 autoreload 8461 132290894636864 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:12:55,201 autoreload 8512 123755400345408 Watching for file changes with StatReloader
+INFO 2023-10-28 22:13:12,693 basehttp 8512 123755359663872 "GET /admin/hometask_app/order/2/change/ HTTP/1.1" 200 38364
+INFO 2023-10-28 22:13:12,707 basehttp 8512 123755349698304 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2023-10-28 22:13:12,710 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:14:29,840 basehttp 8512 123755359663872 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 43125
+INFO 2023-10-28 22:14:29,871 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:14:31,341 basehttp 8512 123755359663872 "GET /admin/hometask_app/goodone/100/change/ HTTP/1.1" 200 10021
+INFO 2023-10-28 22:14:31,364 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:14:36,350 basehttp 8512 123755359663872 "GET /admin/hometask_app/goodone/ HTTP/1.1" 200 43125
+INFO 2023-10-28 22:14:36,381 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:14:39,052 basehttp 8512 123755359663872 "GET /admin/hometask_app/goodone/?o=1 HTTP/1.1" 200 46951
+INFO 2023-10-28 22:14:39,085 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:14:42,068 basehttp 8512 123755359663872 "GET /admin/hometask_app/goodone/1/change/?_changelist_filters=o%3D1 HTTP/1.1" 200 10067
+INFO 2023-10-28 22:14:42,103 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:14:49,367 basehttp 8512 123755359663872 "GET /admin/hometask_app/client/ HTTP/1.1" 200 37395
+INFO 2023-10-28 22:14:49,410 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:20:14,275 basehttp 8512 123755359663872 "GET /admin/hometask_app/order/ HTTP/1.1" 200 52112
+INFO 2023-10-28 22:20:14,323 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+WARNING 2023-10-28 22:20:14,362 log 8512 123755359663872 Not Found: /favicon.ico
+WARNING 2023-10-28 22:20:14,362 basehttp 8512 123755359663872 "GET /favicon.ico HTTP/1.1" 404 3037
+INFO 2023-10-28 22:20:16,749 basehttp 8512 123755359663872 "GET /admin/hometask_app/order/2/change/ HTTP/1.1" 200 38364
+INFO 2023-10-28 22:20:16,798 basehttp 8512 123755359663872 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+INFO 2023-10-28 22:25:32,836 autoreload 8512 123755400345408 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:25:33,005 autoreload 9517 138742880139072 Watching for file changes with StatReloader
+INFO 2023-10-28 22:25:38,766 basehttp 9517 138742839457536 "GET /admin/hometask_app/order/2/change/ HTTP/1.1" 200 38766
+INFO 2023-10-28 22:25:38,784 basehttp 9517 138742839457536 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+WARNING 2023-10-28 22:25:38,870 log 9517 138742839457536 Not Found: /favicon.ico
+WARNING 2023-10-28 22:25:38,871 basehttp 9517 138742839457536 "GET /favicon.ico HTTP/1.1" 404 3037
+INFO 2023-10-28 22:26:20,548 autoreload 9517 138742880139072 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:26:20,718 autoreload 9584 124999723747136 Watching for file changes with StatReloader
+INFO 2023-10-28 22:26:22,092 basehttp 9584 124999683065600 "GET /admin/hometask_app/order/2/change/ HTTP/1.1" 200 25807
+INFO 2023-10-28 22:26:22,129 basehttp 9584 124999683065600 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
+WARNING 2023-10-28 22:26:22,204 log 9584 124999683065600 Not Found: /favicon.ico
+WARNING 2023-10-28 22:26:22,205 basehttp 9584 124999683065600 "GET /favicon.ico HTTP/1.1" 404 3037
+INFO 2023-10-28 22:26:59,165 autoreload 9584 124999723747136 /home/administrator/Desktops/Desktop1/study/django/django/proj_one/hometask_app/admin.py changed, reloading.
+INFO 2023-10-28 22:26:59,366 autoreload 9634 128362734860096 Watching for file changes with StatReloader
+INFO 2023-10-28 22:27:00,102 basehttp 9634 128362694440704 "GET /admin/hometask_app/order/2/change/ HTTP/1.1" 200 25815
+INFO 2023-10-28 22:27:00,115 basehttp 9634 128362694440704 "GET /admin/jsi18n/ HTTP/1.1" 200 15618
